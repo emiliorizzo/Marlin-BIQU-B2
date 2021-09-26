@@ -1,0 +1,25 @@
+From e3c6526ba2bdecf12300e098a52f4de9c581f976 Mon Sep 17 00:00:00 2001
+From: emi <emiliorizzo@gmail.com>
+Date: Fri, 17 Sep 2021 01:36:05 -0300
+Subject: [PATCH] Fix Extruder Current
+
+---
+ Marlin/Configuration_adv.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Marlin/Configuration_adv.h b/Marlin/Configuration_adv.h
+index 03bcf39078..dbbb8c47a2 100644
+--- a/Marlin/Configuration_adv.h
++++ b/Marlin/Configuration_adv.h
+@@ -2648,7 +2648,7 @@
+   #endif
+ 
+   #if AXIS_IS_TMC(E0)
+-    #define E0_CURRENT      950
++    #define E0_CURRENT      800
+     #define E0_MICROSTEPS    16
+     #define E0_RSENSE         0.11
+     #define E0_CHAIN_POS     -1
+-- 
+2.25.1
+

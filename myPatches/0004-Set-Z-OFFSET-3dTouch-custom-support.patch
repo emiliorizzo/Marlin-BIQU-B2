@@ -1,0 +1,25 @@
+From c33618e9bfbc1c4138bad9ac150729dd2492c503 Mon Sep 17 00:00:00 2001
+From: emi <emiliorizzo@gmail.com>
+Date: Mon, 20 Sep 2021 14:13:53 -0300
+Subject: [PATCH] Set Z-OFFSET, 3dTouch, custom support
+
+---
+ Marlin/Configuration.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Marlin/Configuration.h b/Marlin/Configuration.h
+index 5c07ef9019..2d04fd1222 100644
+--- a/Marlin/Configuration.h
++++ b/Marlin/Configuration.h
+@@ -1196,7 +1196,7 @@
+  *     |    [-]    |
+  *     O-- FRONT --+
+  */
+-#define NOZZLE_TO_PROBE_OFFSET { 24, -37, -1.5 }
++#define NOZZLE_TO_PROBE_OFFSET { 24, -37, -1.315 }
+ // Most probes should stay away from the edges of the bed, but
+ // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
+ #define PROBING_MARGIN 10
+-- 
+2.25.1
+

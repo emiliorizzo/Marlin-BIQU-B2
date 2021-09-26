@@ -1,0 +1,25 @@
+From cc17355e4a82d52b0ffafba18e3f2a6c3d415ab2 Mon Sep 17 00:00:00 2001
+From: emi <emiliorizzo@gmail.com>
+Date: Sun, 26 Sep 2021 12:48:32 -0300
+Subject: [PATCH] Enable SINGLE_NOZZLE_STANDBY_TEMP
+
+---
+ Marlin/Configuration.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Marlin/Configuration.h b/Marlin/Configuration.h
+index 8a110c5b4b..da12426df7 100644
+--- a/Marlin/Configuration.h
++++ b/Marlin/Configuration.h
+@@ -205,7 +205,7 @@
+ // Save and restore temperature and fan speed on tool-change.
+ // Set standby for the unselected tool with M104/106/109 T...
+ #if ENABLED(SINGLENOZZLE)
+-//#define SINGLENOZZLE_STANDBY_TEMP
++#define SINGLENOZZLE_STANDBY_TEMP
+ //#define SINGLENOZZLE_STANDBY_FAN
+ #endif
+ 
+-- 
+2.25.1
+

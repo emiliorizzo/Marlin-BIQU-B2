@@ -1,0 +1,29 @@
+From 1c43011a4d0283851a9fe9a0a05564c137c61fbf Mon Sep 17 00:00:00 2001
+From: emi <emiliorizzo@gmail.com>
+Date: Wed, 22 Sep 2021 01:23:32 -0300
+Subject: [PATCH] Update PID, autotune values
+
+---
+ Marlin/Configuration.h | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/Marlin/Configuration.h b/Marlin/Configuration.h
+index 060cc794d6..8a110c5b4b 100644
+--- a/Marlin/Configuration.h
++++ b/Marlin/Configuration.h
+@@ -611,9 +611,9 @@
+     73.55, 73.55        \
+   }
+ #else
+-#define DEFAULT_Kp 23.34
+-#define DEFAULT_Ki 1.85
+-#define DEFAULT_Kd 73.55
++#define DEFAULT_Kp 24.5926
++#define DEFAULT_Ki 2.2194
++#define DEFAULT_Kd 68.1245
+ #endif
+ #endif // PIDTEMP
+ 
+-- 
+2.25.1
+

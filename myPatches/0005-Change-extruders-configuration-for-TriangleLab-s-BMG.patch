@@ -1,0 +1,35 @@
+From 727f600e0124786d7532befcf23a6a7b908a47ac Mon Sep 17 00:00:00 2001
+From: emi <emiliorizzo@gmail.com>
+Date: Mon, 20 Sep 2021 16:41:09 -0300
+Subject: [PATCH] Change extruders configuration for TriangleLab's BMG
+ extruders
+
+---
+ Marlin/Configuration.h | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/Marlin/Configuration.h b/Marlin/Configuration.h
+index 2d04fd1222..060cc794d6 100644
+--- a/Marlin/Configuration.h
++++ b/Marlin/Configuration.h
+@@ -928,7 +928,7 @@
+  */
+ #define DEFAULT_AXIS_STEPS_PER_UNIT \
+   {                                 \
+-    80, 80, 400, 96                 \
++    80, 80, 400, 415                \
+   }
+ 
+ /**
+@@ -1348,7 +1348,7 @@
+ 
+ // For direct drive extruder v9 set to true, for geared extruder set to false.
+ #define INVERT_E0_DIR true
+-#define INVERT_E1_DIR false
++#define INVERT_E1_DIR true
+ #define INVERT_E2_DIR false
+ #define INVERT_E3_DIR false
+ #define INVERT_E4_DIR false
+-- 
+2.25.1
+

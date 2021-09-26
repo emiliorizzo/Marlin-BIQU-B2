@@ -1,0 +1,25 @@
+From b9a9b27ac0f4df4cda54a20daf54eb8c3da79c09 Mon Sep 17 00:00:00 2001
+From: emi <emiliorizzo@gmail.com>
+Date: Sun, 26 Sep 2021 12:47:56 -0300
+Subject: [PATCH] Update TOOL_CHANGE_ZRAISE
+
+---
+ Marlin/Configuration_adv.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Marlin/Configuration_adv.h b/Marlin/Configuration_adv.h
+index dbbb8c47a2..f1c3b39a2d 100644
+--- a/Marlin/Configuration_adv.h
++++ b/Marlin/Configuration_adv.h
+@@ -2261,7 +2261,7 @@
+  */
+ #if HAS_MULTI_EXTRUDER
+   // Z raise distance for tool-change, as needed for some extruders
+-  #define TOOLCHANGE_ZRAISE                 0 // (mm)
++  #define TOOLCHANGE_ZRAISE                 2 // (mm)
+   //#define TOOLCHANGE_ZRAISE_BEFORE_RETRACT  // Apply raise before swap retraction (if enabled)
+   //#define TOOLCHANGE_NO_RETURN              // Never return to previous position on tool-change
+   #if ENABLED(TOOLCHANGE_NO_RETURN)
+-- 
+2.25.1
+
