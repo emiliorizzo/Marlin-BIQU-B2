@@ -1,0 +1,25 @@
+From c7d2c745559984c9d1c072825b54e49e3cdbff18 Mon Sep 17 00:00:00 2001
+From: emi <emiliorizzo@gmail.com>
+Date: Thu, 7 Oct 2021 19:05:13 -0300
+Subject: [PATCH] Set FAN_MIN_PWM = 70
+
+---
+ Marlin/Configuration_adv.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Marlin/Configuration_adv.h b/Marlin/Configuration_adv.h
+index f1c3b39a2d..1d09622ad4 100644
+--- a/Marlin/Configuration_adv.h
++++ b/Marlin/Configuration_adv.h
+@@ -504,7 +504,7 @@
+  *
+  * Define one or both of these to override the default 0-255 range.
+  */
+-//#define FAN_MIN_PWM 80
++#define FAN_MIN_PWM 70
+ //#define FAN_MAX_PWM 128
+ 
+ /**
+-- 
+2.25.1
+

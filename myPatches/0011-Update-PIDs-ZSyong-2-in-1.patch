@@ -1,0 +1,29 @@
+From 162c042e4e518ea508cf6591641216fa83521200 Mon Sep 17 00:00:00 2001
+From: emi <emiliorizzo@gmail.com>
+Date: Wed, 6 Oct 2021 20:00:47 -0300
+Subject: [PATCH] Update PIDs ZSyong 2 in 1
+
+---
+ Marlin/Configuration.h | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/Marlin/Configuration.h b/Marlin/Configuration.h
+index da12426df7..f9001f443a 100644
+--- a/Marlin/Configuration.h
++++ b/Marlin/Configuration.h
+@@ -611,9 +611,9 @@
+     73.55, 73.55        \
+   }
+ #else
+-#define DEFAULT_Kp 24.5926
+-#define DEFAULT_Ki 2.2194
+-#define DEFAULT_Kd 68.1245
++#define DEFAULT_Kp 18.0184
++#define DEFAULT_Ki 1.2308
++#define DEFAULT_Kd 65.9473
+ #endif
+ #endif // PIDTEMP
+ 
+-- 
+2.25.1
+
